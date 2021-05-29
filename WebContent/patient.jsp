@@ -51,9 +51,10 @@
 		}
 		function sendVitals()
 		{
-			
+			if(vitals.value<89){
 			websocket.send(vital.value);
 			vital.value="";
+			}
 			
 		}
 	</script>
